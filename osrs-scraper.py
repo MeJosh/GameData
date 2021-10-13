@@ -153,7 +153,7 @@ def getCharacterListFromConfig(config_path):
             return []
 
 if __name__ == "__main__":
-    character_list = getCharacterListFromConfig("./engine/config.yml")
+    character_list = getCharacterListFromConfig("./config.yml")
     for character in character_list:
         data = loadCharacterData(character)
         writeCharacterDataToFile(data, "./data/{}/".format(character))
